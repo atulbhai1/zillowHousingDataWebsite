@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+{% extends "index.html" %}
+{% block content %}
+{% include data[0] %}
+<section style="background-color:teal; border=blue;border-width:10px; border-style:outset">
+<h5>You can zoom in by holding the mouse and moving the mouse so that the bright rectangle covers the data selection you want to view</h5>
+<h5>To go back to normal zoom, just double click</h5>
+<h6>This plot was made with Plotly</h6>
+</section>
+{% endblock %}
+</body>
+</html>
